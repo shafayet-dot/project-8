@@ -20,7 +20,7 @@ const PhoneDetail = () => {
      <div className="flex justify-center">
   <div>
    <h1 className="font-bold text-2xl text-center">Lawyer’s Profile Details</h1>
-   <p className="text-center mt-4">Lorem ipsum dolor sit amet consectetur. Sit enim blandit orci tortor amet ut. Suscipit sed est fermentum magna. Quis vitae tempus facilisis <br />turpis imperdiet mattis donec dignissim volutpat.</p>
+   <p className="text-center mt-4">This is a detail page of the loywer you are click check and if you liked book an appoinment.</p>
   </div>
      </div>
     </div>
@@ -50,7 +50,7 @@ const PhoneDetail = () => {
 
           <div class="flex space-x-4 text-[#FFA000] items-center">
              <h2 class="text-black font-medium text-xl text-gray-700">Availability</h2>
-             <div className='mr-2'>
+             <div className='mr-2 space-x-2'>
              {
                work.map(w=><button class="bg-orange-50 px-2 py-1 rounded-full border">{w}</button>)
              }
@@ -64,7 +64,7 @@ const PhoneDetail = () => {
 
              </div>
              <Link to='/my_booking'>
-             <button onClick={handleFavourite} className='btn bg-green-500 px-50'>Appointment</button>
+             <button onClick={handleFavourite} className='btn bg-green-500 px-50 text-white'>Book Appointment</button>
              </Link>
     </div>
  </div>
